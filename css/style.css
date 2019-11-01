@@ -1,0 +1,38 @@
+:root {
+    --yellow: yellow;
+    --green: green;
+    --red: red;
+    --orange: orange;
+}
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration-color: yellow;
+}
+h3 {
+    font-size: 2rem;
+    color: green;
+}
+.top {
+    width: 200px;
+    height: 200px;
+}
+.firstlayout {
+    background: orange;
+    width: 200rem;
+    height: 200rem;
+    background-image: url('../img/8-colour_24199230_1050x600.jpg');
+}
+.footer {
+    background: black;
+    font-size: 20px;
+    text-align: center;
+    padding-block: center;
+    width: 200px;
+    height: 200px;
+}
