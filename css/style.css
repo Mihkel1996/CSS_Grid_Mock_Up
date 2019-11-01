@@ -4,6 +4,12 @@
     --red: red;
     --orange: orange;
 }
+button {
+    box-sizing: border-box;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+}
 body {
     background-color: white;
     margin: 0;
@@ -18,21 +24,39 @@ h3 {
     font-size: 2rem;
     color: green;
 }
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
 .top {
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 150px;
 }
 .firstlayout {
     background: orange;
-    width: 200rem;
-    height: 200rem;
+    width: 65rem;
+    height: 35rem;
     background-image: url('../img/8-colour_24199230_1050x600.jpg');
 }
-.footer {
+.footers {
+    box-align: center;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.footer1 {
     background: black;
     font-size: 20px;
     text-align: center;
     padding-block: center;
-    width: 200px;
-    height: 200px;
+    width: 560px;
+    height: 300px;
+}
+.footer2 {
+    background: black;
+    font-size: 20px;
+    text-align: center;
+    padding-block: center;
+    width: 560px;
+    height: 300px;
 }
