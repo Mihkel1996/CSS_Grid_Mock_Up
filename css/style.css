@@ -4,12 +4,36 @@
     --red: red;
     --orange: orange;
 }
-button {
-    box-sizing: border-box;
-    align-items: center;
-    width: 150px;
-    height: 30px;
+
+.navigation {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    background-color: var(--green);
 }
+
+.navigation ul { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 75%;
+    list-style: none;
+}
+
+.navigation ul li {
+    text-align: center;
+    border: 1px solid yellow;
+    font-family: 'Arvo', serif;
+    font-size: 1.25rem;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 2rem;
+}
+
+
 body {
     background-color: white;
     margin: 0;
@@ -18,25 +42,121 @@ body {
 
 h2 {
     font-size: 2rem;
-    text-decoration-color: yellow;
+    text-decoration-color: white;
+    text-align: center;
+    color: var(--red);
 }
 h3 {
     font-size: 2rem;
-    color: green;
+    color: black;
 }
+p {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
 .wrapper {
     display: grid;
     gap: 20px;
 }
 .top {
-    width: 800px;
-    height: 150px;
+    top: 20%;
+    left: 15%;
+    text-align: center;
+    width: 80rem;
+    height: 20rem;
+    padding-block: center;
+    background-image: url('../img/FoodBackground.jpg');
+}
+.toptext {
+    width: 25rem;
+    height: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+p.toptext {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    padding: 18px 27px;
 }
 .firstlayout {
     background: orange;
     width: 65rem;
     height: 35rem;
     background-image: url('../img/8-colour_24199230_1050x600.jpg');
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.secondlayout {
+    display: grid;
+    gap: 20px;
+    top: 23%;
+    left: 40%;
+    width: 20rem;
+    height: 10rem;
+    background-image: url('../img/cropped-GettyImages-643764514-650x428.jpg');
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+.thirdlayout {
+    
+}
+.fourthlayout {
+    
+}
+
+.fifthlayout {
+    
+}
+.sixthlayout {
+    background-image: url('../img/Photos_2/')
+}
+.ninthlayout {
+    display: grid;
+    gap: 20px;
+    width: 30rem;
+    height: 15rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.photos {
+    position: inline-block;
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo_21 {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding-block: center;
+    width: 30rem;
+    height: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    background-image: url('../img/Photos_2/AAEUyGF.img.jpg');
+}
+.photo_22 {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding-block: center;
+    width: 30rem;
+    height: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    background-image: url('../img/Photos_2/acs-h.assetsadobe.com.jpg');
+}
+.photo_23 {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    padding-block: center;
+    width: 30rem;
+    height: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));;
+    background-image: url('../img/Photos_2/paper-bag-food-with-vegetables-fruit-and-meat-on-royalty-free-image-1151978570-1566417686.jpg');
+}
+.btnpage {
+    text-decoration-style: solid;
 }
 .footers {
     box-align: center;
@@ -45,18 +165,28 @@ h3 {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 .footer1 {
-    background: black;
+    background: brown;
     font-size: 20px;
     text-align: center;
     padding-block: center;
-    width: 560px;
-    height: 300px;
+    width: 40rem;
+    height: 30rem;
 }
 .footer2 {
-    background: black;
+    background: brown;
     font-size: 20px;
     text-align: center;
     padding-block: center;
-    width: 560px;
-    height: 300px;
+    width: 40rem;
+    height: 30rem;
+}
+
+@media (max-width: 320px) {
+
+}
+@media (max-width: 420px) {
+
+}
+@media (max-width: 768px) {
+
 }
