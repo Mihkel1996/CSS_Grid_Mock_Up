@@ -119,11 +119,11 @@ p.toptext {
 .photos {
     position: inline-block;
     float: left;
-    width: 100px;
+    width:  100px;
     height: 100px;
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:   no-repeat;
+    background-size:     cover;
 }
 .photo_21 {
     display: grid;
@@ -182,11 +182,55 @@ p.toptext {
 }
 
 @media (max-width: 320px) {
-
+    .top {
+        grid-template-areas:
+        "top"
+        "footers"
+        "navigation"
+        "photos"
+        "firstlayout"
+        "secondlayout"
+    }
 }
 @media (max-width: 420px) {
+    body {
+        margin: 0;
+    }
+    .top {
+        grid-template-areas:
+        "toptext"
+    }
+    .footers {
+        perspective: 400px;
+    }
 
+    .toptext {
+        grid-template-columns: 1fr;
+    }
+
+    .top img {
+        width: 30%;
+    }
 }
 @media (max-width: 768px) {
+    .top {
+        order: -1;
+        perspective: 700px;
+    }
 
+    .top ul {
+        max-height: 0;
+        overflow: hidden;
+        transform: rotateX(90deg);
+        transition: all 0,5s;
+    }
+    .top a {
+        font-size: 0.75rem;
+    }
+
+    [aria-expanded="true"] ~ ul {
+        display: grid;
+        max-height: 500px;
+        transform: rotateX(0);
+    }
 }
