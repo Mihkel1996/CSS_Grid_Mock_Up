@@ -36,28 +36,91 @@
     background-image: linear-gradient(#b48b8ba9, #9198e588), url('../img/FoodBackground.jpg');
 
 }
+
+.toptext {
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 1.5;
+}
 .firstlayout {
     width: 100%;
     height: 25vh;
-    background-image: url('../img/8-colour_24199230_1050x600.jpg');
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
 }
+
 
 .secondlayout {
     width: 100%;
     height: 22vh;
-    background-image: url('../img/8-colour_24199230_1050x600.jpg');
+    background-image: linear-gradient(#248549a9, #21d8c0a6), url('../img/8-colour_24199230_1050x600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondlayout p {
+    width: 100%;
+    height: 25vh;
+    display: grid;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #fff;
 }
 
 .thirdlayout {
     width: 100%;
     height: 23vh;
-    background-image: url('../img/8-colour_24199230_1050x600.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.5;
 }
 
 .fifthlayout {
     width: 100%;
     height: 22vh;
-    background-image: url('../img/8-colour_24199230_1050x600.jpg');
+    background-image: linear-gradient(#da861abe, #b1080863), url('../img/cropped-GettyImages-643764514-650x428.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.fifthlayout h2 {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    
 }
 
 .ninthlayout {
